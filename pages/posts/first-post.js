@@ -15,9 +15,6 @@ export default function FirstPost() {
         onLoad={() => console.log(`腳本正確地載入，window.FB 已被定義`)}
       />
       <h1>First Post</h1>
-      <h2>
-        <Link href="/">Back to home</Link>
-      </h2>
     </Layout>
   );
 }
