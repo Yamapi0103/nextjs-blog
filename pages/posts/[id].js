@@ -1,6 +1,7 @@
 import Head from 'next/head.js';
 import Layout from '../../components/layout.js';
 import { getAllPostIds, getPostData } from '../../lib/posts.js';
+import utilStyles from '../../styles/utils.module.css';
 
 export default function Post({ postData }) {
   return (
@@ -8,9 +9,12 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <br />
-      {postData.id}
-      <br />
+      <article>
+        <h1 className={utilStyles.headinXl}>{postData.title}</h1>
+      </article>
+      <div className={utilStyles.lightText}>
+        <Date dateString={postData.date} />
+      </div>
       {postData.date}
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </Layout>
