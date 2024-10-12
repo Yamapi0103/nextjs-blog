@@ -1,10 +1,13 @@
+import Head from 'next/head.js';
 import Layout from '../../components/layout.js';
 import { getAllPostIds, getPostData } from '../../lib/posts.js';
 
 export default function Post({ postData }) {
   return (
     <Layout>
-      {postData.title}
+      <Head>
+        <title>{postData.title}</title>
+      </Head>
       <br />
       {postData.id}
       <br />
