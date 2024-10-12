@@ -2,6 +2,7 @@ import Head from 'next/head.js';
 import Layout from '../../components/layout.js';
 import { getAllPostIds, getPostData } from '../../lib/posts.js';
 import utilStyles from '../../styles/utils.module.css';
+import Date from '../../components/date.js';
 
 export default function Post({ postData }) {
   return (
@@ -15,7 +16,6 @@ export default function Post({ postData }) {
       <div className={utilStyles.lightText}>
         <Date dateString={postData.date} />
       </div>
-      {postData.date}
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </Layout>
   );
