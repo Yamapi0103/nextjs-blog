@@ -6,6 +6,7 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 
 https://github.com/vercel/next-learn/tree/main/basics/
 
+vercel: https://vercel.live/link/nextjs-blog-eta-seven-92.vercel.app?via=deployment-domains-list&p=1
 
 ### 重點筆記：
 
